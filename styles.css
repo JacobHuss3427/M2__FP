@@ -1,54 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 * {
-    font-family: "Roboto", sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 ul {
-    display: flex;
+  display: flex;
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  
 }
 
 p {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 h1 {
-    font-size: 40px;
-    text-align: center;
+  font-size: 40px;
+  text-align: center;
 }
 
 .purple {
-    color: #7346d6;
+  color: #7346d6;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 button:active {
-    transform: translateY(1px);
+  transform: translateY(1px);
+}
+
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* 
@@ -58,44 +67,41 @@ NAV
 */
 
 .nav__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 32px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 24px;
 }
 
 .nav__logo {
-    display: flex;
+  display: flex;
 }
 
 .nav__logo--img {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .nav__links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.nav__links-1, 
+.nav__links-1,
 .nav__links-2 {
-    display: flex;
-    padding-left: 32px;
+  display: flex;
+  padding-left: 32px;
 }
 
 .nav__link {
-    padding-left: 16px;
+  padding-left: 16px;
 }
 
 .nav__link--primary {
-    color: white;
-    background-color: #7346d6;
-    padding: 12px 24px;
-    border-radius: 24px;
-    margin-left: 16px;
+  color: white;
+  background-color: #7346d6;
+  padding: 12px 24px;
+  border-radius: 24px;
+  margin-left: 16px;
 }
