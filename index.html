@@ -1,38 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Treact</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://kit.fontawesome.com/afef628eef.js" crossorigin="anonymous"></script>
-</head>
+  </head>
+  <body>
     <section id="landing">
-        <nav>
-            <div class="row nav__container">
-                <div class="nav__logo">
-                    <img src="./assets/logo.2.svg" class="nav__logo--img" alt="logo">
-                    <h1>Treact</h1>
-                </div>
-                <ul class="nav__links">
-                    <div class="nav__links-1">
-                        <li><a href="" class="nav__link">About</a></li>
-                        <li><a href="" class="nav__link">Blog</a></li>
-                        <li><a href="" class="nav__link">Pricing</a></li>
-                        <li><a href="" class="nav__link">Contact Us</a></li>
-                    </div>
-                    <div class="nav__links-2">
-                        <li><a href="" class="nav__link">Login</a></li>
-                        <li><a href="" class="nav__link nav__link--primary">Sign Up</a></li>
-                    </div>
-                </ul>
-                    
-                </ul>
+      <nav>
+        <div class="row nav__row">
+          <div class="nav__logo">
+            <img src="./assets/logo.2.svg" class="nav__logo--img" alt="logo" />
+            <div class="nav__logo--title">Treact</div>
+          </div>
+          <ul class="nav__links">
+            <li><a href="" class="nav__link">About</a></li>
+            <li><a href="" class="nav__link">Blog</a></li>
+            <li><a href="" class="nav__link">Pricing</a></li>
+            <li><a href="" class="nav__link">Contact Us</a></li>
+            <li><a href="" class="nav__link nav__login">Login</a></li>
+            <li><a href="" class="nav__link nav__link--primary">Sign Up</a></li>
+          </ul>
+        </div>
+      </nav>
+      <header>
+        <div class="row container header__container">
+          <div class="header__description">
+            <h1 class="header__title">
+              Beautiful React Templates <span class="purple">for you.</span>
+            </h1>
+            <p class="section__para header__para">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
+              est quasi perferendis nostrum accusantium totam inventore debitis
+              adipisci temporibus illo.
+            </p>
+            <div class="header__email">
+              <input
+                type="email"
+                class="header__email--input"
+                placeholder="Your E-mail address"
+              />
+              <button class="header__email--btn">Get Started</button>
             </div>
-        </nav>
+            <p class="header__customers--title">OUR TRUSTED CUSTOMERS</p>
+            <img
+              src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png"
+              class="header__customers"
+              alt=""
+            />
+          </div>
+          <figure class="header__img">
+            <img
+              src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
+              alt=""
+            />
+          </figure>
+        </div>
+      </header>
     </section>
-<body>
-    
-</body>
+    <main>
+      <section id="features">
+        <div class="container features__container">
+          <div class="row__narrow">
+            <h4 class="features__tag">FEATURES</h4>
+            <h2 class="section__title">
+              We have Amazing <span class="purple">Service.</span>
+            </h2>
+            <p class="section__para features__para">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
+              iste nihil accusamus! Dolores eos explicabo aliquid neque
+              corporis?
+            </p>
+            <div class="features">
+              <div class="feature">
+                <div class="feature__container">
+                  <div class="feature__img--wrapper">
+                    <i class="fa-sharp-duotone fa-solid fa-shield-quartered">jhaufukh</i>
+                  </div>
+                  <div class="feature__text">
+                    <h2 class="feature__title">Secure</h2>
+                    <p class="feature__para">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Placeat, culpa delectus!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
