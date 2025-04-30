@@ -28,6 +28,7 @@ a {
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
+  
 }
 
 p {
@@ -89,8 +90,8 @@ button {
   transition: all 300ms ease;
 }
 
-button:active {
-  transform: translateY(1px);
+.btn:hover {
+  background-color: rgba(80,17,204);
 }
 
 .row {
@@ -166,10 +167,13 @@ nav {
 
 .nav__link {
   margin: 0 24px;
+  text-decoration: none;
 }
+
 
 .nav__link:hover {
   color: #6415ff;
+  text-decoration: none;
 }
 
 .nav__login {
@@ -182,12 +186,13 @@ nav {
   padding: 12px 24px;
   border-radius: 24px;
   margin-left: 16px;
+  transition: all 300ms ease;
 }
 
 .nav__link--primary:hover {
-  color: #fff;
+  color: #ffffff7c;
   text-decoration: none;
-  opacity: 0.9;
+  background-color: rgb(80, 17, 204)
 }
 
 /* 
@@ -265,6 +270,10 @@ HEADER
   font-weight: 700;
   font-size: 16px;
   transition: all 300ms;
+}
+
+.header__email--btn:hover {
+  background-color: rgba(60,13,153);
 }
 
 .header__customers--title {
@@ -649,6 +658,11 @@ PRICING
   transition: all 300ms ease;
 }
 
+.plan__button:hover {
+  transform: translate(1px, -1px);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
 .plan:nth-child(2) .plan__stripe {
   visibility: hidden;
 }
@@ -869,6 +883,14 @@ START
   transition: all 300ms;
 }
 
+.start__button:hover:nth-child(1) {
+  background-color: rgba(229,62,62);
+}
+
+.start__button:hover:nth-child(2) {
+  background-color: rgba(247,250,252);
+  color: rgba(100,21,255);
+}
 
 /* 
 
@@ -915,6 +937,11 @@ footer {
   line-height: 1.5;
   font-weight: 500;
   position: relative;
+  transition: all 300ms ease;
+}
+
+.footer__column--link:hover {
+  opacity: 0.7;
 }
 
 .footer__divider {
@@ -965,6 +992,10 @@ footer {
   transition: all 300ms;
 }
 
+.footer__social--link:hover {
+  background-color: rgb(252, 253, 159);
+}
+
 .footer__bottom {
   display: flex;
   justify-content: space-between;
@@ -974,4 +1005,51 @@ footer {
 .footer__social--link svg {
   height: 16px;
   width: 16px;
+}
+
+/* 
+
+DEVICE COMPATIBILITY
+
+*/
+
+
+@media (max-width: 550px) {
+  .nav__links {
+      display: none;
+  }
+
+  .btn__menu {
+      display: block;
+  }
+
+  .highlight {
+      width: 100%;
+  }
+
+  .highlight:not(:last-child) {
+      margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__description {
+      padding: 0 24px;
+  }
+  
+  h1 {
+      font-size: 40px;
+  }
+
+  h2 {
+      font-size: 26px;
+  }
+
+  button {
+      font-size: 18px;
+  }
+
+  .book {
+      width: 50%;
+  }
 }
